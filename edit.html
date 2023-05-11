@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+	<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="register.js"></script>
+    
+<head>
+<style>
+	.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 60%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+	body 
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		margin-left:25%;
+		margin-right:25%;
+		border: 1px solid #000000;
+		margin-bottom: 5px;
+		padding: 0px 15px 0 15px;
+		background-color: #37629b;
+		margin-top: 100px;
+		}
+	input[type=text], input[type=password] 
+		{
+		width: 97%;
+		padding: 10px;
+		margin: 5px 0 22px 0;
+		display: inline-block;
+		border: none;
+		background: #F5F5F5;
+		}
+	hr 
+		{
+		border: 1px solid #e6e6e6;
+		margin-bottom: 5px;
+		}
+	.registerbutton
+		{
+		background-color: #e1b136;
+		color: white;
+		padding: 15px 20px;
+		margin: 10px 0px;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+		font-weight: bold;
+		}
+		form h1{
+			color: rgb(143, 218, 218);
+		}
+		p, label {
+			color: rgb(189, 246, 246);
+		}
+</style>
+
+</head>
+<body>
+    
+	<form id="form" name="form" action="profile.html" method="get">
+		<h1>Edit Your Profile</h1>
+		<hr>
+		
+		<label for="fname"><b>First name:</b></label><br>
+		<input type="text" placeholder="Enter Your Name" name="fname" required><br>
+
+		<label for="lname"><b>Last name:</b></label><br>
+		<input type="text" placeholder="Enter Your Last name" name="lname" required><br>
+
+		<label for="job"><b>Occupation:</b></label><br>
+		<input type="text" placeholder="Enter Your Occupation" name="job" required><br>
+
+		<label for="age"><b>Age</b></label>
+		<input type="text" placeholder="Enter Your Age" name="age" required><br>
+		
+		<label for="email"><b>Email</b></label> 
+		<input type="text" placeholder="Enter Your E-mail" name="email" required><br>
+
+		<button onclick="window.location.href = 'profile.html';" class="registerbutton">Save</button>
+		
+	</form>
+</body>
+</html>

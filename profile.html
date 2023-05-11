@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="list.js"></script>
+    <style>
+      body {
+      background-image: url("index.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+      </style>
+    <title>Profile</title>
+</head>
+<body>
+  <div class="nav-container">
+    <div class="logo"><img src="logo.png" alt="logo" width="200px"></div>
+    <div class="navbar">
+          <a href="aboutUs.html"><i class="fa-about"></i>About Us</a> 
+          <a href="profile.html"><i class="fa-profile"></i>Profile</a>
+          <a href="createTask.html"><i class="fa-create"></i>Create Task</a> 
+          <a href="index.html"><i class="fa-home"></i>Home</a>
+        </div>
+    </div>
+    <div class="pro-name"><h2>My Profile</h2></div>
+
+<form id="profile" name="profile">
+  
+  <h4 id="Fname"></h4>
+  
+  <h4 id="Lname"></h4>
+  
+  <h4 id="Age"></h4>
+ 
+  <h4 id="Job"></h4>
+
+  <h4 id="Email"></h4>
+</form> 
+<button onclick="window.location.href = 'edit.html';" class="editBtn">Edit</button>
+</body>
+</html>
